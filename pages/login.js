@@ -3,7 +3,8 @@ import Link from 'next/link'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+
+export default function Login() {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,12 +16,12 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Home Page
+          Login Page
         </h1>
 
-        <Link href="/login">
+        <Link href="/">
           <a>
-            to Login Page
+            to Home Page
           </a>
         </Link>
 

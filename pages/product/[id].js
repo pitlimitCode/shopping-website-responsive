@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 // import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-export default function Home() {
+export default function Product() {
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Home Page
+          Product Page
         </h1>
 
         <Link href="/login">
@@ -24,15 +24,9 @@ export default function Home() {
           </a>
         </Link>
 
-        <Link href="/product/1">
+        <Link href="/">
           <a>
-            to Product 1 Page
-          </a>
-        </Link>
-
-        <Link href="/product/2">
-          <a>
-            to Product 2 Page
+            to Home Page
           </a>
         </Link>
 
