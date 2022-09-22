@@ -26,13 +26,13 @@ export default function Home() {
 
         <Link href="/product/1">
           <a>
-            to Product 1 Page
+            to Product 1st Page
           </a>
         </Link>
 
         <Link href="/product/2">
           <a>
-            to Product 2 Page
+            to Product 2nd Page
           </a>
         </Link>
 
