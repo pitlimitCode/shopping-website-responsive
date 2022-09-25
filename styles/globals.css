@@ -1,9 +1,21 @@
+@font-face { font-family: metropolis; src: url("./Metropolis-Regular.otf") format("opentype"); }
+
+:root {
+  --theme-color: #32C33B;
+  --black1: #000000;
+  --black2: #222222;
+  --grey1: #9B9B9B;
+  --grey2: #D4D4D4;
+  --white1: #FFFFFF;
+  --white2: #F9F9F9;
+}
+/* background-color: var(--theme-color); */
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: metropolis;
 }
 
 a {
@@ -17,25 +29,19 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: var(--white2);
   }
   body {
-    color: white;
-    background: black;
+    color: var(--black1);
+    /* background: var(--theme-color); */
   }
 }
 
-/* 
-font: metropolis
+
+/* font: metropolis
 #32C33B color-green
 #DB3022 color-red
 #273AC7 color-blue
-#000000 black 1
-#222222 black 2
-#9B9B9B grey 1
-#D4D4D4 grey 2
-#FFFFFF white 1
-#F9F9F9 white 2
 #F01F0E red? 1
 #2AA952 green? 1
 #1A1A1A product-color-1
@@ -50,4 +56,4 @@ font: metropolis
 #456BF3 profle-color-1
 #F36F45 profle-color-2
 #F3456F profle-color-3
-*/
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */

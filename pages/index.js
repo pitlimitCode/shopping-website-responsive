@@ -1,45 +1,28 @@
 import Head from 'next/head'
-import Link from 'next/link'
-// import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+
+import {NonLogin, Login} from '../components/navbar'
+import {HomeThemes, HomeCategory} from '../components/homeThemesCategory'
+import {HomeNewProduct, HomePopularProduct} from '../components/homeNewPopular'
 
 export default function Home() {
+  const count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Home</title>
         <meta name="description" content="Home Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      {true 
+        ? <NonLogin/>
+        : <Login/> 
+      }
 
-        <h1 className={styles.title}>
-          Home Page
-        </h1>
-
-        <Link href="/login">
-          <a>
-            to Login Page
-          </a>
-        </Link>
-
-        <Link href="/product/1">
-          <a>
-            to Product 1st Page
-          </a>
-        </Link>
-
-        <Link href="/product/2">
-          <a>
-            to Product 2nd Page
-          </a>
-        </Link>
-
-      </main>
-
-      <footer className={styles.footer}>
-      </footer>
-    </div>
+      <HomeThemes/>
+      <HomeCategory/>
+      <HomeNewProduct count={count}/>
+      <HomePopularProduct count={count}/>
+    </>
   )
 }

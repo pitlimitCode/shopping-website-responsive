@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .main {
@@ -10,112 +10,130 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: var(--white2);
+  color: var(--black1);
 }
 
-.footer {
-  display: flex;
+.section {
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+  align-items: left;
+  margin-bottom: 10px;
+  /* background: var(--white2);
+  color: var(--black1); */
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  /* border: 0.5px solid red; */
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  font-size: 34px;
+  font-weight: bold;
 }
 
-.title,
-.description {
-  text-align: center;
+.desc {
+  font-size: 12px;
+  color: var(--grey2);
+  margin-bottom: 10px;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.products {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
+  width: 19.4%;
+  cursor: pointer;
+  border: 0.5px solid #eaeaea;
+  border-radius: 3px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0); */
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  /* margin: 5px; */
+  /* margin-right: 10px; */
+  /* color: inherit; */
+  /* transition: color 0.15s ease, border-color 0.15s ease; */
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.card_body {
+  width: 100%;
+  margin: 5px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.card_imageProduct {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.card_title {
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.card_price {
+  font-size: 16px;
+  color: #F01F0E;
+  font-weight: bold;
 }
 
-@media (max-width: 600px) {
+.card_brand {
+  font-size: 14px;
+  color: var(--grey1);
+}
+
+.card_star {
+  line-height: 0 !important;
+  font-size: 0.8rem;
+  color: gold;
+}
+.card_starPoint {
+  font-size: 0.7rem;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.imgCategory{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
@@ -126,4 +144,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */

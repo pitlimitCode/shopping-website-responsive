@@ -1,0 +1,77 @@
+.container {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 4rem;
+}
+.justifyLeft {
+  display: flex;
+  align-items: center;
+}
+.justifyRight {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 18px;
+  padding-right: 6px;
+}
+.brand{
+  font-size: 14px;
+  color: var(--theme-color);
+  padding-top: 4px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.searchBar{
+  border-radius: 10px;
+  border: 1px solid var(--grey2);
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.searchInput{
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 10px;
+  padding: 2px 0px 0px 8px;
+  width: 400px;
+}
+.searchInput:focus{
+  outline: transparent;
+}
+
+.icon{
+  border-color: transparent;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+.button{
+  font-size: 8px;
+  text-align: center;
+  width: 60px;
+  /* padding: 2px 12px; */
+  /* border-radius: 8px; */
+  /* border: 1px solid red; */
+  margin-left: 8px;
+}
+.login{
+  color: var(--white1);
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  padding: 4px 12px 2px 12px;
+  border-radius: 18px;
+}
+.signup{
+  color: var(--grey1);
+  background: var(--white1);
+  border: 1px solid var(--grey1);
+  padding: 4px 12px 2px 12px;
+  border-radius: 18px;
+}
