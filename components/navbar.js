@@ -1,11 +1,18 @@
 // import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Navbar.module.css'
 
 function NonLogin(props){
   return (
     <div className={styles.container}>
       <div className={styles.justifyLeft}>
-        <img className={styles.logo} src="/logo/logoShop.svg"/>
+        <Image 
+          className={styles.logo}
+          src="/logo/logoShop.svg"
+          alt='category'
+          width='18'
+          height='18'
+        />
         <div className={styles.brand}>Shop.id</div>
         <div className={styles.searchBar}>
           <input type="text" className={styles.searchInput} placeholder="Search" />

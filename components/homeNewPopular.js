@@ -1,14 +1,20 @@
 import Link from 'next/link'
-// import Image from 'next/image'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 function Product(props){
   return (
     <Link href={`/product/${props.count}`}>
       <div className={styles.card}>
-        <img className={styles.card_imageProduct} src="/product/product.png"/>
+        <Image
+          className={styles.card_imageProduct}
+          src="/product/product.png"
+          alt='product'
+          width='236'
+          height='136'
+        />
         <div className={styles.card_body}>
-          <div className={styles.card_title}>Men's format suit - Black & White</div>
+          <div className={styles.card_title}>Men&apos;s format suit - Black & White</div>
           <div className={styles.card_price}>$ 40.0</div>
           <div className={styles.card_brand}>Zabora Cloth</div>
           <div>
@@ -58,7 +64,7 @@ function HomeNewProduct(props){
     <div className={styles.container}>
       <section className={styles.section}>
         <div className={styles.title}>New</div>
-        <div className={styles.desc}>You've never seen it before!</div>
+        <div className={styles.desc}>You&apos;ve never seen it before!</div>
         <HomeProduct15 count={props.count}/>
       </section>
     </div>

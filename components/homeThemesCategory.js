@@ -1,13 +1,11 @@
+/* eslint-disable */
+
 // import Link from 'next/link'
 // import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import React, { useRef, useState } from "react";
-
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
@@ -57,7 +55,17 @@ function HomeCategory(props){
         
           {categories.map((category, index) => (
             <SwiperSlide className='swiper-slide' key={index}>
-              <img className={styles.imgCategory} src={category.src}/>
+              <img
+                className={styles.imgCategory} 
+                src={category.src}
+              />
+              {/* <Image
+                className={styles.imgCategory} 
+                src={category.src}
+                alt='category'
+                width='206'
+                height='220'
+              /> */}
             </SwiperSlide>
           ))}
           {/* <SwiperSlide>Slide 1</SwiperSlide>
