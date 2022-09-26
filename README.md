@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/pitlimitCode/shopping-website-responsive/main/public/logo/logoShop.png" alt="Logo" width="50px" height="50px">
+  <img src="https://raw.githubusercontent.com/pitlimitCode/shopping-website-responsive/main/public/logo/logoShop.png" alt="Logo" width="64px" height="88px">
 
   <h3 align="center">Shopping Website Responsive</h3>
 
@@ -14,22 +14,14 @@
     Website Responsive project  with theme Shopping Web App.
   </p>
   <p align="center">
-     | 
-    <span><a href="https://shopping-pitlimitcode.netlify.app">Home</a><span>
-     | 
-    <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Product Detail</a><span>
-     | 
-    <span><a href="https://shopping-pitlimitcode.netlify.app/login">Login</a><span>
-     |
-    register
-     | 
-    My Bag
-     | 
-    Checkout
-     | 
-    Profile (customer)
-     | 
-    Page-selling product 
+     | <span><a href="https://shopping-pitlimitcode.netlify.app">Home</a><span>
+     | <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Product Detail</a><span>
+     | <span><a href="https://shopping-pitlimitcode.netlify.app/login">Login</a><span>
+     | Register
+     | My Bag
+     | Checkout
+     | Customer Profile 
+     | Page-selling product 
      |
   </span>
 </div>
@@ -50,7 +42,6 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#setup-env-example">Setup .env example</a></li>
       </ul>
     </li>
     <li><a href="#screenshoots">Screenshots</a></li>
@@ -60,17 +51,17 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-**Bitri Recipe** Bitri Recipe is a web application that has the main feature where users can share their recipes in the form of video tutorials to make it easier for visitors to learn the recipe they are looking for. This website is developed with using PostgreSql, Express JS, Next JS and Node JS technologies.
+Shopping Website Responsive is a website project with theme Shooping Website Application. This website is developed with using Node JS and Next JS technologies.
 
 ### Built With
 This app was built with some technologies below:
 - [Javascript](https://www.javascript.com/)
 - [Next JS](https://nextjs.org/)
-- [HTML]()
+- [HTML](https://html.spec.whatwg.org/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/)
 - [Bootstrap-icons](icons.getbootstrap.com)
-<!-- - [Swiper JS](https://swiperjs.com) -->
+- [Swiper JS](https://swiperjs.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -99,11 +90,21 @@ npm install
 - Type ` npm run dev ` To Start Website
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Setup .env example
-Create .env.local file in your root project folder.
-```
-CLIENT_DOMAIN=[YOUR_FRONTEND_URL]
-```
+## Screenshoots
+<p align="center" display=flex>
+  <table>
+    <tr>
+      <td>Home</td>
+      <td>Detail Product</td>
+      <td>Login</td>
+    </tr>
+    <tr>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664204559/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app__fd6ray.png" alt="Home" width=100%></td>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664204567/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_DetailProduct_y0umvb.png" alt="Detail Product" width=100%/></td>
+      <td><image src="#" alt="Login" width=100%/></td>
+    </tr>
+  </table>
+</p>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contact
