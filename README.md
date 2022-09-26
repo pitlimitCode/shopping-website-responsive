@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/pitlimitCode/shopping-website-responsive/main/public/logo/logoShop.png" alt="Logo" width="150px">
+  <img src="https://raw.githubusercontent.com/pitlimitCode/shopping-website-responsive/main/public/logo/logoShop.png" alt="Logo" width="50px" height="50px">
 
   <h3 align="center">Shopping Website Responsive</h3>
 
@@ -15,11 +15,11 @@
   </p>
   <p align="center">
      | 
-    <span><a href="https://shopping-pitlimitcode.netlify.app/">Home</a><span>
+    <span><a href="https://shopping-pitlimitcode.netlify.app">Home</a><span>
      | 
-    Product Detail
+    <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Product Detail</a><span>
      | 
-    Login
+    <span><a href="https://shopping-pitlimitcode.netlify.app/login">Login</a><span>
      |
     register
      | 
