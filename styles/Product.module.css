@@ -1,0 +1,90 @@
+.container {
+  padding: 0 4rem;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  /* margin: 20px 0; */
+  /* background: var(--white2);
+  color: var(--black1); */
+
+  /* border: 0.5px solid red; */
+}
+
+.categoryClass{
+  font-size: 14px;
+  color: var(--grey1);
+  font-weight: bold;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.h3 {
+  font-size: 16px;
+  color: var(--black1);
+  font-weight: bold;
+}
+.h3red {
+  font-size: 16px;
+  color: #F01F0E;
+}
+.h4Black {
+  font-size: 16px;
+  color: var(--black1);
+  font-weight: bold;
+}
+.h4Grey {
+  font-size: 16px;
+  color: var(--grey1);
+  font-weight: bold;
+}
+.desc {
+  font-size: 0.9rem;
+  color: var(--grey2);
+}
+.logoStar {
+  line-height: 0 !important;
+  font-size: 1rem;
+  color: gold;
+  margin-right: 4px;
+}
+
+
+.button{
+  font-size: 8px;
+  text-align: center;
+  width: 100%;
+  /* padding: 2px 12px; */
+  /* border-radius: 8px; */
+  /* border: 1px solid red; */
+  margin-left: 8px;
+}
+.buttonCol3{
+  color: var(--white1);
+  background: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  padding: 4px 12px 2px 12px;
+  border-radius: 18px;
+}
+.buttonCol6{
+  color: var(--grey1);
+  background: var(--white1);
+  border: 1px solid var(--grey1);
+  padding: 4px 12px 2px 12px;
+  border-radius: 18px;
+}
+
+.other {
+  font-size: 40px;
+  font-weight: bold;
+}

@@ -51,8 +51,6 @@ function HomeCategory(props){
           loop={true}
           modules={[Navigation]} 
         >
-        {/* <div> */}
-        
           {categories.map((category, index) => (
             <SwiperSlide className='swiper-slide' key={index}>
               <img
@@ -68,11 +66,6 @@ function HomeCategory(props){
               /> */}
             </SwiperSlide>
           ))}
-          {/* <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide> */}
-
-        {/* </div> */}
         </Swiper>
 
         </section>
