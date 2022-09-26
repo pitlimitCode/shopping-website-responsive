@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin-bottom: 10px;
+  margin: 40px 0;
   /* background: var(--white2);
   color: var(--black1); */
 
@@ -49,7 +49,7 @@
   width: 19.4%;
   cursor: pointer;
   border: 0.5px solid #eaeaea;
-  border-radius: 3px;
+  border-radius: 10px;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0); */
   text-align: left;
   /* margin: 5px; */
@@ -65,7 +65,7 @@
 
 .card_imageProduct {
   width: 100%;
-  border-radius: 3px 3px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .card_title {
@@ -116,6 +116,12 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+.imgTheme{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .imgCategory{
   display: block;
