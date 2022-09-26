@@ -6,16 +6,32 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1663208268/bootcamp%20pijarcamp%20project%20cloud%20image/logo_bitri_mini1_xhkqa4.png" alt="Logo" width="150px">
+  <img src="https://raw.githubusercontent.com/pitlimitCode/shopping-website-responsive/main/public/logo/logoShop.png" alt="Logo" width="150px">
 
   <h3 align="center">Shopping Website Responsive</h3>
 
   <p align="center">
-    Shopping Application Website Design Share Your favorite Recipe to the world.
-    <br />
-    <br />
-    <a href="https://shopping-pitlimitcode.netlify.app">View Demo</a>
+    Website Responsive project  with theme Shopping Web App.
   </p>
+  <p align="center">
+     | 
+    <span><a href="https://shopping-pitlimitcode.netlify.app/">Home</a><span>
+     | 
+    Product Detail
+     | 
+    Login
+     |
+    register
+     | 
+    My Bag
+     | 
+    Checkout
+     | 
+    Profile (customer)
+     | 
+    Page-selling product 
+     |
+  </span>
 </div>
 
 <!-- TABLE OF CONTENTS -->
