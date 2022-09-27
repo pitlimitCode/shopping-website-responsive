@@ -17,8 +17,8 @@
      | <span><a href="https://shopping-pitlimitcode.netlify.app">Home</a><span>
      | <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Product Detail</a><span>
      | <span><a href="https://shopping-pitlimitcode.netlify.app/login">Login</a><span>
-     | Register
-     | My Bag
+     | <span><a href="https://shopping-pitlimitcode.netlify.app/register">Register</a><span>
+     | <span><a href="https://shopping-pitlimitcode.netlify.app/mybag">My Bag</a><span>
      | Checkout
      | Customer Profile 
      | Page-selling product 
@@ -96,12 +96,30 @@ npm install
     <tr>
       <td>Home</td>
       <td>Detail Product</td>
-      <td>Login</td>
     </tr>
     <tr>
       <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664204559/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app__fd6ray.png" alt="Home" width=100%></td>
       <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664204567/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_DetailProduct_y0umvb.png" alt="Detail Product" width=100%/></td>
-      <td><image src="#" alt="Login" width=100%/></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>Login</td>
+      <td>Register</td>
+    </tr>
+    <tr>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664311289/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_Login_mvr4br.png" alt="Login" width=100%/></td>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664311287/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_Register_fgrxro.png" alt="Register" width=100%/></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>My Bag</td>
+      <td>coming soon ...</td>
+    </tr>
+    <tr>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664311288/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_MyBag_julujz.png" alt="My Ba" width=100%/></td>
+      <td><image src="#" alt="coming soon ..." width=100%/></td>
     </tr>
   </table>
 </p>
