@@ -53,9 +53,25 @@
 }
 
 .icon{
-  border-color: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  padding-right: 24px;
+  color: var(--grey1);
+}
+.iconSearch{
+  cursor: pointer;
   font-size: 10px;
   padding-right: 10px;
+  color: var(--grey1);
+}
+.funnelIcon{
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--grey1);
+  border: 1px solid var(--grey2);
+  border-radius: 5px;
+  padding: 3px 4px 0 4px;
+  margin: 3px;
 }
 
 .button{

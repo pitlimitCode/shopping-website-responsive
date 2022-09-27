@@ -10,6 +10,13 @@
   --white2: #F9F9F9;
 }
 /* background-color: var(--theme-color); */
+.theme-color { color: var(--theme-color);}
+.black1 { color: var(--black1);}
+.black2 { color: var(--black2);}
+.grey1 { color: var(--grey1);}
+.grey2 { color: var(--grey2);}
+.white1 { color: var(--white1);}
+.white2 { color: var(--white2);}
 
 html,
 body {

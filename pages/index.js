@@ -15,8 +15,8 @@ export default function Home() {
       </Head>
 
       {true 
-        ? <NonLogin/>
-        : <Login/> 
+        ? <Login/>
+        : <NonLogin/> 
       }
 
       <HomeThemes/>
