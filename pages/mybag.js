@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
 import styles from '../styles/MyBag.module.css'
-import {NonLogin, Login} from '../components/navbar'
+import IsLogin from '../components/navbar'
 
 export default function MyBag() {
   // const count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -13,7 +12,8 @@ export default function MyBag() {
         <meta name="description" content="My ordered product" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {true ? <NonLogin/> : <Login/>}
+      
+      <IsLogin />
 
       <div className={styles.container}>
         <section className='section'>

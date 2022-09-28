@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Navbar.module.css'
+import { useRouter } from "next/router";
+import { useSelector, useDispatch } from "react-redux";
 
-function NonLogin(props){
+function NonLogin(){
   return (
     <div className={styles.container}>
       <div className={styles.justifyLeft}>
@@ -39,7 +41,17 @@ function NonLogin(props){
   )
 }
 
-function Login(props){
+function Login(){
+  const router = useRouter();
+  const dispatch = useDispatch();   
+
+  const handleLogout = () => {
+    dispatch({
+      type: 'SET_ISLOGIN',
+      payload: false
+    }),
+    router.push("/login");
+  };
   return (
     <div className={styles.container}>
       <div className={styles.justifyLeft}>
@@ -75,13 +87,9 @@ function Login(props){
           <div className={styles.icon}><i className="bi bi-envelope"/></div>
         {/* </Link> */}
         {/* <Link href="#"> */}
-          {/* <div className={styles.icon}><i className="bi bi-person"/></div> */}
           <Image 
-            className='dropdown-toggle'
-            data-bs-toggle="dropdown-toggle"
-            aria-expanded="false"
             src="/logo/christian-buehner.jpg"
-            alt='category'
+            alt='profile'
             width='18'
             height='18'
             style={{
@@ -90,10 +98,22 @@ function Login(props){
             }}
           />
         {/* </Link> */}
-
+        <Link href="/login">
+          <div className={styles.iconLogout} onClick={handleLogout}><i className="bi bi-power"/></div>
+        </Link>
       </div>
+
     </div>
   )
 }
 
-export {Login, NonLogin};
+function IsLogin() {
+  const {isLogin} = useSelector(state => state.auth);
+  if (isLogin){
+    return <><Login /></>
+  } else {
+    return <><NonLogin /></>
+  }
+}
+
+export default IsLogin;

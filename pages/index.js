@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import {NonLogin, Login} from '../components/navbar'
+import IsLogin from '../components/navbar'
 import {HomeThemes, HomeCategory} from '../components/homeThemesCategory'
 import {HomeNewProduct, HomePopularProduct} from '../components/homeNewPopular'
 
@@ -14,11 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {true 
-        ? <Login/>
-        : <NonLogin/> 
-      }
-
+      <IsLogin />
       <HomeThemes/>
       <HomeCategory/>
       <HomeNewProduct count={count}/>

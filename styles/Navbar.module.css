@@ -73,6 +73,18 @@
   padding: 3px 4px 0 4px;
   margin: 3px;
 }
+.iconLogout{
+  font-size: 14px;
+  background:white;
+  color: red;
+  border-radius: 10px;
+  padding: 2px 4.5px 0 4px;
+  margin-left: 16px;
+}
+.iconLogout:hover{
+  background:red;
+  color: white;
+}
 
 .button{
   font-size: 8px;
