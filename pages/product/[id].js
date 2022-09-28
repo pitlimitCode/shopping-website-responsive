@@ -1,10 +1,5 @@
 import Head from 'next/head'
-// import Link from 'next/link'
-// import Image from 'next/image'
-// import styles from '../../styles/Product.module.css'
-
-import React from "react";
-import {NonLogin, Login} from '../../components/navbar'
+import IsLogin from '../components/navbar'
 import {ProductDetail, OtherProduct} from '../../components/productDetail'
 
 export default function Product() {
@@ -17,11 +12,7 @@ export default function Product() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {true 
-        ? <NonLogin/>
-        : <Login/> 
-      }
-
+      <IsLogin />
       <ProductDetail count={count}/>
       <OtherProduct count={count}/>
     </>
