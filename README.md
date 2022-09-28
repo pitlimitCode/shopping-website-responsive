@@ -1,6 +1,3 @@
-<!-- shopping-website-responsive -->
-<!-- Shopping Website Responsive-->
-
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
@@ -15,13 +12,12 @@
   </p>
   <p align="center">
      | <span><a href="https://shopping-pitlimitcode.netlify.app">Home</a><span>
-     | <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Product Detail</a><span>
+     | <span><a href="https://shopping-pitlimitcode.netlify.app/product/1">Detail Product</a><span>
      | <span><a href="https://shopping-pitlimitcode.netlify.app/login">Login</a><span>
      | <span><a href="https://shopping-pitlimitcode.netlify.app/register">Register</a><span>
      | <span><a href="https://shopping-pitlimitcode.netlify.app/mybag">My Bag</a><span>
-     | Checkout
-     | Customer Profile 
-     | Page-selling product 
+     | Checkout 
+     | Profile 
      |
   </span>
 </div>
@@ -85,9 +81,10 @@ cd shopping-website-responsive
 ```
 npm install
 ```
-
-- <a href="#setup-env">Setup .env</a>
-- Type ` npm run dev ` To Start Website
+- To Start Website
+```
+npm run dev
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Screenshoots
@@ -115,10 +112,20 @@ npm install
   <table>
     <tr>
       <td>My Bag</td>
-      <td>coming soon ...</td>
+      <td>Checkout</td>
     </tr>
     <tr>
-      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664311288/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_MyBag_julujz.png" alt="My Ba" width=100%/></td>
+      <td><image src="https://res.cloudinary.com/dy3yw6bod/image/upload/v1664311288/bootcamp%20pijarcamp%20project%20cloud%20image/shopping%20web%20responsive/shopping-pitlimitcode.netlify.app_MyBag_julujz.png" alt="My Bag" width=100%/></td>
+      <td><image src="#" alt="coming soon ..." width=100%/></td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>Customer Profile 1</td>
+      <td>Customer Profile 2</td>
+    </tr>
+    <tr>
+      <td><image src="#" alt="coming soon ..." width=100%/></td>
       <td><image src="#" alt="coming soon ..." width=100%/></td>
     </tr>
   </table>
