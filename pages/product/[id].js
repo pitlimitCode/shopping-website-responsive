@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import IsLogin from '../components/navbar'
+import IsLogin from '../../components/navbar'
 import {ProductDetail, OtherProduct} from '../../components/productDetail'
 
 export default function Product() {
