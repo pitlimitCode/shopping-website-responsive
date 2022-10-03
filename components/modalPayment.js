@@ -4,7 +4,7 @@ import { Modal } from "reactstrap";
 import Image from 'next/image'
 import styles from '../styles/MyBag.module.css'
 
-export default function modalPayment() {
+export default function ModalPayment() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
