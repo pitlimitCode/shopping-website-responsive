@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import { Modal } from "reactstrap";
 
 import Image from 'next/image'
 import styles from '../styles/MyBag.module.css'
 
 export default function modalPayment() {
-  const [modalOpen, setModalOpen] = React.useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
       <div type="button" className={styles.button} onClick={() => setModalOpen(!modalOpen)}>
