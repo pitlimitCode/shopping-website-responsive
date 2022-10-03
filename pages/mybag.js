@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/MyBag.module.css'
 import IsLogin from '../components/navbar'
 
@@ -17,7 +18,7 @@ export default function MyBag() {
 
       <div className={styles.container}>
         <section className='section'>
-          <p className='fs-1 fw-bold my-4'>My Bag</p>
+          <div className='fs-1 fw-bold my-4'>My Bag</div>
           <div className='row'> 
 
             <div className='col-8'>
@@ -112,12 +113,14 @@ export default function MyBag() {
             {/* Shopping summary */}
             <div className='col-4'>
               <div className='shadow p-3 mb-5 bg-body rounded'>
-                <div className='fw-bold'>Shooping Summary</div>
+                <div className='fw-bold'>Shooping summary</div>
                 <div className='d-flex justify-content-between py-4'>
                   <div className='grey1'>Total price</div>
                   <div className='fw-bold'>$ 40.0</div>
                 </div>
-                <div className={styles.button} type='button'>Buy</div> 
+                <Link href="/checkout">
+                  <div className={styles.button} type='button'>Buy</div> 
+                </Link>
               </div>
             </div>
 

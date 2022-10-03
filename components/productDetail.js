@@ -1,5 +1,6 @@
 // import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Product.module.css'
 import Products15 from './products15'
 
@@ -160,7 +161,9 @@ function ProductDetail(props){
             <div className='row'>
               <div className='col-3'> <div className={styles.button}> <div className={styles.buttonCol3} type='button'>Chat</div> </div> </div>
               <div className='col-3'> <div className={styles.button}> <div className={styles.buttonCol3} type='button'>Add bag</div> </div> </div>
-              <div className='col-6'> <div className={styles.button}> <div className={styles.buttonCol6} type='button'>Buy</div> </div> </div>
+              <Link href="/mybag">
+                <div className='col-6'> <div className={styles.button}> <div className={styles.buttonCol6} type='button'>Buy</div> </div> </div>
+              </Link>
             </div>
           </div>
         </div>
