@@ -96,7 +96,7 @@ export default function ModalPayment() {
             <div className='fw-bold theme-color'>$ 45.0</div>
           </div>
           <div>
-            <div type="button" className={styles.button2}>
+            <div type="button" className={styles.buyButtonPayment}>
               Buy
             </div>
           </div>

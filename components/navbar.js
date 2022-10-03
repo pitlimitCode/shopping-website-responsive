@@ -86,7 +86,8 @@ function Login(){
         {/* <Link href="#"> */}
           <div className={styles.icon}><i className="bi bi-envelope"/></div>
         {/* </Link> */}
-        {/* <Link href="#"> */}
+
+        <Link href="/profile">
           <Image 
             src="/logo/christian-buehner.jpg"
             alt='profile'
@@ -96,8 +97,10 @@ function Login(){
               cursor: 'pointer',
               borderRadius: '50%'
             }}
+            className="dropdown-menu"
           />
-        {/* </Link> */}
+        </Link>
+
         <Link href="/login">
           <div className={styles.iconLogout} onClick={handleLogout}><i className="bi bi-power"/></div>
         </Link>
