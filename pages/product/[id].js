@@ -2,7 +2,20 @@ import Head from 'next/head'
 import IsLogin from '../../components/navbar'
 import {ProductDetail, OtherProduct} from '../../components/productDetail'
 
-export default function Product() {
+export async function getServerSideProps({ params }) {
+  const { id } = params;
+  const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+  const data = await res.json();
+  // const post = id;
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default function Product({data}) {
   const count = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   return (
     <>
@@ -13,7 +26,7 @@ export default function Product() {
       </Head>
 
       <IsLogin />
-      <ProductDetail count={count}/>
+      <ProductDetail id={data.id} title={data.title} price={data.price} image={data.image} rating={data.rating}/>
       <OtherProduct count={count}/>
     </>
   )

@@ -82,7 +82,7 @@ function ProductDetail(props){
             <div>
               <Image 
                 className={styles.rounded}
-                src={imgProducts[4].src}
+                src={props.image}
                 alt='productMain'
                 width='400'
                 height='400'
@@ -104,19 +104,19 @@ function ProductDetail(props){
           </div>
 
           <div className='col-8 ps-4'>
-            <div className={styles.title}>Baju muslim pria</div>
-            <div className={styles.h4Grey}>Zabora Cloth</div>
+            <div className={styles.title}>{props.title}</div>
+            {/* <div className={styles.h4Grey}>Zabora Cloth</div> */}
             <div className='pb-4'>
               <span className={styles.logoStar}><i className="bi bi-star-fill"></i></span>
               <span className={styles.logoStar}><i className="bi bi-star-fill"></i></span>
               <span className={styles.logoStar}><i className="bi bi-star-fill"></i></span>
               <span className={styles.logoStar}><i className="bi bi-star-fill"></i></span>
               <span className={styles.logoStar}><i className="bi bi-star-half"></i></span>
-              <span className={styles.desc}>(8.5)</span>
+              <span className={styles.desc}>{props.rating.rate}</span>
             </div>
             
             <div className={styles.h4Grey}>Price</div>
-            <div className={styles.title}>$ 40.0</div>
+            <div className={styles.title}>$ {props.price}</div>
             <div className='pb-4' />
 
             <div className={styles.h4Black}>Color</div>
@@ -193,7 +193,7 @@ function ProductDetail(props){
 
           <div className='col'>
             <div>
-              <span style={{fontSize:'50px', fontWeight:"bold"}}>8.5</span>  
+              <span style={{fontSize:'50px', fontWeight:"bold"}}>{props.rating.rate}</span>  
               <span style={{fontSize:'16px', color:'grey'}}>/10</span>  
             </div>
             <div>

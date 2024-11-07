@@ -116,3 +116,9 @@
   padding: 4px 12px 2px 12px;
   border-radius: 18px;
 }
+
+@media (max-width: 867px) {
+  .searchBar {
+    display: none;
+  }
+}
