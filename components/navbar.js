@@ -14,8 +14,8 @@ function NonLogin(){
               className={styles.logo}
               src="/logo/logoShop.svg"
               alt='category'
-              width='18'
-              height='18'
+              width='34'
+              height='34'
             />
             <div className={styles.brand}>Shop.id</div>
           </div>

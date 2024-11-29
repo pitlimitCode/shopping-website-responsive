@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/LoginRegister.module.css'
 
-import React, {useState} from 'react'
+import {useState} from 'react'
 
 function FormCustomer() {
   return (
@@ -57,23 +57,18 @@ export default function Register() {
 
             <div className='fw-bold mb-4'>Please sign up with your account</div>
 
-            <div className='row d-flex justify-content-center mb-4'>
-              <div className='col-4'>
-                <div className={styles.active} style={{cursor:'pointer'}} onClick={() => setUser(true)}>
-                  Customer
-                </div>
-              </div>
-              <div className='col-4'>
-                <div className={styles.inactive} style={{cursor:'pointer'}} onClick={() => setUser(false)}>
-                  Seller
-                </div>
-              </div>
+            <div className="btn-group mb-4" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" className="btn-check btn-outline-custom" name="btnradio" id="btnradio1" autocomplete="off" onClick={() => setUser(true)} defaultChecked/>
+              <label className="btn btn-outline-custom" for="btnradio1"> Customer </label>
+
+              <input type="radio" className="btn-check btn-outline-custom" name="btnradio" id="btnradio2" autocomplete="off" onClick={() => setUser(false)}/>
+              <label className="btn btn-outline-custom" for="btnradio2"> Seller </label>
             </div>
 
             {user ? <FormCustomer /> : <FormSeller />}
 
             <Link href="/login">
-              <div className={styles.button} type='button'>Primary</div> 
+              <div className={styles.button} type='button'> Register </div> 
             </Link>
 
             <Link href="/login">

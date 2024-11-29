@@ -34,6 +34,26 @@ a {
   box-sizing: border-box;
 }
 
+.btn-outline-custom{
+  /* appearance: none; */
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px; */
+  /* border-radius: 50%; */
+  border: 2px solid var(--theme-color);
+  background-color: white;
+  color: var(--theme-color);
+  cursor: pointer;
+}
+
+.btn-outline-custom:checked + label{
+  background-color: var(--theme-color)!important;
+  border-color: var(--theme-color)!important;
+  color: white!important;
+  cursor: default;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: var(--white2);
