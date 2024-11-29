@@ -5,6 +5,8 @@ import styles from '../styles/LoginRegister.module.css'
 
 import {useState} from 'react'
 
+import LogoBrand from '../components/logoBrand';
+
 function FormCustomer() {
   return (
     <>
@@ -40,20 +42,7 @@ export default function Register() {
       <div className='row d-flex justify-content-center my-5'>
         <div className='col-4'>
           <div className='text-center'>
-            <Link href="/">
-              <div style={{cursor:'pointer'}}>
-                <div className='d-flex justify-content-center mb-4'>
-                  <Image 
-                    className={styles.logo}
-                    src="/logo/logoShop.svg"
-                    alt='category'
-                    width='40'
-                    height='40'
-                  />
-                  <div className='theme-color fw-bold fs-3 pt-2'>Shop.id</div>
-                </div>
-              </div>
-            </Link>
+          <div className='mb-4'> <LogoBrand size={40}/> </div>
 
             <div className='fw-bold mb-4'>Please sign up with your account</div>
 

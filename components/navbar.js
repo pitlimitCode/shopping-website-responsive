@@ -4,22 +4,13 @@ import styles from '../styles/Navbar.module.css'
 import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 
+import LogoBrand from './logoBrand';
+
 function NonLogin(){
   return (
     <div className={styles.container}>
       <div className={styles.justifyLeft}>
-        <Link href="/">
-          <div className={styles.logoBrandToHome}>
-            <Image 
-              className={styles.logo}
-              src="/logo/logoShop.svg"
-              alt='category'
-              width='34'
-              height='34'
-            />
-            <div className={styles.brand}>Shop.id</div>
-          </div>
-        </Link>
+        <LogoBrand size={24}/>
         <div className={styles.searchBar}>
           <input type="text" className={styles.searchInput} placeholder="Search" />
           <div className={styles.icon}><i className="bi bi-search" style={{color:'grey'}}/></div>

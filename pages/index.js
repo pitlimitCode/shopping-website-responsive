@@ -16,9 +16,9 @@ export default function Home() {
       </Head>
 
       <IsLogin />
-      {/* <HomeThemes/>
+      <HomeThemes/>
       <HomeCategory/>
-      <HomeNewProduct count={count}/> */}
+      <HomeNewProduct count={count}/>
       {/* <HomePopularProduct count={count}/> */}
     </>
   )
