@@ -133,5 +133,5 @@ npm run dev
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contact
-My Email : kristiadiprabowo@gmail.com
+My Email : prabow14@gmail.com
 <p align="right">(<a href="#top">back to top</a>)</p>
