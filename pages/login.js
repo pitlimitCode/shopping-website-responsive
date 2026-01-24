@@ -29,7 +29,7 @@ export default function Login() {
       </Head>
 
       <div className='row d-flex justify-content-center my-5'>
-        <div className='col-4'>
+        <div style={{width:'30rem'}}>
           <div className='text-center'>
             <div className='mb-4'> <LogoBrand size={40}/> </div>
 
@@ -56,6 +56,17 @@ export default function Login() {
           </div>
         </div>
       </div>
+
+      {/* <div className='row d-flex justify-content-center my-5'>
+        <div style={{}}>
+          <div className='text-center mx-6'>
+            <input className="form-control form-control-lg fs-6 mb-2" type="text" placeholder="Email"/>
+            <input className="form-control form-control-lg fs-6 mb-2" type="text" placeholder="Password"/>
+            <div className='text-end theme-color' style={{cursor:'pointer'}}>Forgot password?</div> 
+            <div className={styles.button} type='button' onClick={handleLogin}> Login </div> 
+          </div>
+        </div>
+      </div> */}
 
     </div>
   )

@@ -33,13 +33,17 @@ a {
 * {
   box-sizing: border-box;
 }
+ 
+/* 576px 768px 992px 1200px 1400px */
+
 
 .btn-outline-custom{
-  /* appearance: none; */
+  appearance: none;
   /* -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px; */
+  -moz-appearance: none; */
+  min-width: 110px;
+  /* width: 50px; */
+  /* height: 20px; */
   /* border-radius: 50%; */
   border: 2px solid var(--theme-color);
   background-color: white;

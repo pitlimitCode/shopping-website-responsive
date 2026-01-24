@@ -1,7 +1,7 @@
 
 export default function products(req, res) {
   fetch('https://fakestoreapi.com/products')
-  .then(res=>res.json())
+  .then(resp=>resp.json())
   .then(json=>
     res.status(200).json(json)
   )

@@ -40,7 +40,7 @@ export default function Register() {
       </Head>
 
       <div className='row d-flex justify-content-center my-5'>
-        <div className='col-4'>
+      <div style={{width:'30rem'}}>
           <div className='text-center'>
           <div className='mb-4'> <LogoBrand size={40}/> </div>
 
