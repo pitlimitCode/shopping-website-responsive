@@ -72,12 +72,14 @@ export default function Products15(props){
     <>
       { !datas
       ? <>Loading...</>
-      : <div className={styles.products}>
-        { datas.map((data)=>(
-          <Product key={data.id} id={data.id} title={data.title} price={data.price} image={data.image} rating={data.rating}/>
-          ))
-        }
-        </div>
+      : (datas.length >= 0 )
+         ? <div className={styles.products}>
+            { datas.map((data)=>(
+              <Product key={data.id} id={data.id} title={data.title} price={data.price} image={data.image} rating={data.rating}/>
+            ))}
+          </div>
+         : <> Data Null </> 
+        
 
       }
       {/* <div className={styles.products}>
